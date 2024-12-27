@@ -21,4 +21,4 @@ if test -n "$USE_PODMAN"; then
 fi
 
 $DOCKER compose pull
-exec $DOCKER compose -f docker-compose.yml up --no-attach catalog --no-attach temporal --no-attach temporal-ui --no-attach temporal-admin-tools
+exec $DOCKER compose -f docker-compose.yml up --no-attach catalog --no-attach temporal --no-attach temporal-ui --no-attach temporal-admin-tools -d
